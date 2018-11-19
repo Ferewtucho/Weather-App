@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- moment js -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style-map.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Javascript link -->
+    <script src="assets/js/weather.js"></script>
+    <script src="assets/js/time.js"></script>
+    <script src="assets/js/map.js"></script>
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="center">
+
+            <h2 class = "top">Weather APP</h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class="jumbotron">
+            <form class="form-inline">
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" id="pac-input" id="submit" class="form-control" id="city_input" placeholder="City Name">
+                    <button type="submit" id="submit" class="btn btn-primary mb-2" style = "display: none">Search City</button>
+                </div>
+
+
+                <span id="error"> </span>
+
+            </form>
+            <div class="row">
+
+                <div class="col-md-6 box">
+                    <h2 id="city"> City name </h2>
+                    <p id="time"> Time </p>
+                    <div class="middle">
+                        <!-- <br> -->
+                        <img id="icon" src='http://openweathermap.org/img/w/01d.png' width="80" height="80" alt="icon">
+
+                        <div class="degree">
+                            <h1 id="temp">70</h1>
+                            <span class="deg">&#176</span>
+                        </div>
+                        <span id="max">Max : /</span><span id="min">Min : </span>
+                        <br><br>
+                        <h3 id="desc">Description</h3>
+                        <br><br>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-md-6">
+                    <div id="map"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+
+            <p class = "top">@copyright2018 ft</p>
+    </div>
+
+
+    <!-- Google -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
