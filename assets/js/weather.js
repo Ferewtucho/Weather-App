@@ -9,7 +9,7 @@ $(document).ready(function () {
         function weather() {
             var lat = pos.coords.latitude;
             var long = pos.coords.longitude;
-            var apiKey = "30c55c739fa6787f35f27530e496c731";
+            var apiKey = "APIKEY";
             var url = `http://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${long}&cnt=10`;
 
             $.ajax({
@@ -53,9 +53,9 @@ $(document).ready(function () {
         var city = spl[0];
         console.log(city);
         var url = "api.openweathermap.org/data/2.5/weather?q=";
-        var apiKey = "30c55c739fa6787f35f27530e496c731";
+        var apiKey = "YOURAPIKEY";
 
-        // http://api.openweathermap.org/data/2.5/weather?q=Philadelphia&APPID=30c55c739fa6787f35f27530e496c731
+        // http://api.openweathermap.org/data/2.5/weather?q=Philadelphia&APPID=APIKEY
 
         if (city != "") {
             $.ajax({
