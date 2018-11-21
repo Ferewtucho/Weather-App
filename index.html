@@ -30,9 +30,11 @@
 </head>
 
 <body>
-    <div class="center">
 
-        <h2 class="top">Weather APP</h2>
+    <nav class="navbar navbar-light bg-light" style = "color: #0077b5;">
+        <a class="navbar-brand" style = "text-align: center">Weather App</a>
+    </nav>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -59,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
     <br>
     <div class="container">
         <div class="jumbotron">
@@ -92,28 +94,25 @@
                         <h3 id="desc">Description</h3>
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Temperature
                             Converter</button>
-
                         <br><br>
                     </div>
                 </div>
                 <!--  -->
                 <!--  -->
-                <div class="col-md-6">
+                <div class="col-md-6 map">
                     <div id="map"></div>
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="bottom">
-
-        <p class="top">@copyright2018 ft</p>
+    <div class="card-footer text-muted" style = "text-align: center; margin-top: 20px;position:fixed; bottom: 0; width: 100%">
+            <p style = "color: #0077b5; padding-top: 10px">@copyright2018 ft</p>
     </div>
 
 
     <!-- Google -->
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&libraries=places&callback=initAutocomplete"
+    <script src="https://maps.googleapis.com/maps/api/js?key=YourAPI&libraries=places&callback=initAutocomplete"
         async defer></script>
 
     <!-- Optional JavaScript -->
