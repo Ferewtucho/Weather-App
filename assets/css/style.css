@@ -1,69 +1,74 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-        body {
-            font-family: 'Playfair Display', serif;
-            background-color: #2a2a2a;
-        }
-        h1, h2, h3, span {
-            margin: 0;
-            color: #2a2a2a;
-        }
-        h1 {
-            font-size: 10rem;
-        }
-        h2 {
-            font-size : 1.4rem;
-        }
-        h3 {
-            font-size: 1 rem;
-        }
-        .bg-light {
-            background-color: rgba(0, 0, 0, 0) !important;
-        }
-        .top {
-            padding: 10px;
-        }
-        .deg {
-            font-size: 6rem;
-        }
-        .row {
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #95f3fa;
+}
+h1,
+h2,
+h3,
+span {
+  margin: 0;
+  color: #2a2a2a;
+}
+h1 {
+  font-size: 10rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1 rem;
+}
+.bg-light {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.top {
+  padding: 10px;
+}
+.deg {
+  font-size: 6rem;
+}
+.row {
+  background: transparent;
+}
+.box {
+  margin-top: 10px;
+  background-image: url("../img/weather.jpg");
+  background-blend-mode: soft-light soft-light;
+  max-width: 550px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 10% 10%;
+  padding: 25px 5px;
+}
+p {
+  color: black;
+}
+.col-md-6 {
+  border-radius: 5px;
+}
+.degree {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  display: inline;
+}
+.form {
+  text-align: center;
+}
 
-            background: transparent;
-        }
-        .box {
-            margin-top: 10px;
-            background-image: url("../img/weather.jpg");
-            background-blend-mode: soft-light soft-light;
-            max-width: 550px;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            border: 1px solid black;
-            margin: 0 auto;
-            display: grid;
-            grid-template-rows: 10% 10%;
-            padding: 25px 5px;
-        }
-        p {
-            color:black;
-        }
-        .degree {
-            display: grid;
-            grid-template-columns: auto auto;
-            justify-content: center;
-            margin-left: 2rem;
-        }
-        .jumbotron {
-            background-color: rgba(255, 255, 255, 0);
-            text-align: center;
-            display: inline;
-        }
-        .form {
-            text-align: center;
-        }
-
-        @media only screen and (max-width: 768px) { 
-            .map {
-                min-height: 500px;
-                margin-top: 10px;
-            }
-        }
+@media only screen and (max-width: 768px) {
+  .map {
+    min-height: 500px;
+    margin-top: 10px;
+  }
+}
