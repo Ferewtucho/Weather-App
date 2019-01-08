@@ -52,7 +52,7 @@ $(document).ready(function() {
     var city = spl[0];
     console.log(city);
     var url = "api.openweathermap.org/data/2.5/weather?q=";
-    var apiKey = "3f60a19ab9b5c0738acbd9901a34d177";
+    var apiKey = "****************************";
 
     // http://api.openweathermap.org/data/2.5/weather?q=Philadelphia&APPID=APIKEY
 
