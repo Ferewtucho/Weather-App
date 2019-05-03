@@ -140,7 +140,7 @@ body {
 /* ////////////////////////////////////////
 // Result */
 .main {
-  background-color: #ba265d;
+  background-color: linear-gradient(to right bottom, #416b77, #80bbc4);
   padding: 10px;
   width: 100%;
 
