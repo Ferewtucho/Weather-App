@@ -73,6 +73,14 @@ body {
 .search-div {
   background-color: #ccc;
   padding: 1rem;
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 16%;
+  right: 25%;
+  color: rgb(243, 9, 9);
 }
 
 .search {
@@ -147,7 +155,8 @@ body {
   padding: 3rem;
   background-size: cover;
   background-position: top;
-  color:var(--color-grey-light-1);
+  color: var(--color-grey-light-1);
+  border-radius: 0.8rem;
 }
 
 #city-name {

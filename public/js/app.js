@@ -1,5 +1,3 @@
-console.log("I'm Working");
-
 const form = document.querySelector("button");
 const search = document.querySelector("input");
 
@@ -19,10 +17,8 @@ form.addEventListener("click", e => {
   console.log("I'm Clicked");
 
   const location = search.value;
-  //   console.log(location);
 
-  // messageOne.textContent = "Loading...";
-  // messagetwo.textContent = "";
+  city.textContent = "Loading...";
 
   fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
     response.json().then(data => {
@@ -39,7 +35,7 @@ form.addEventListener("click", e => {
 
         temperature.textContent = Math.round(data.main.temp);
         temp_min.textContent = Math.round(data.main.temp_min);
-        temo_max.textContent = Math.round(data.main.temp_max);
+        temp_max.textContent = Math.round(data.main.temp_max);
       }
     });
   });
